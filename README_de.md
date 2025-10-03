@@ -26,6 +26,9 @@ mehrere Server hinweg synchronisieren kannst – vollständig NBT-kompatibel und
   - Hunger & Sättigung
   - Schaden
   - Aktive Effekte (Potions)
+  - Wasser Atem
+  - Erfolge
+  - Freigeschaltet Rezepte
 - 🧩 API zur Integration in eigene Plugins
 - 📁 Asynchrone Datenverarbeitung
 
@@ -35,9 +38,8 @@ mehrere Server hinweg synchronisieren kannst – vollständig NBT-kompatibel und
 
 1. Lade die neueste Version von [GitHub](https://github.com/Dolfirobots/PlayerSyncer/releases) oder Spigot (Coming Soon) herunter.
 2. Lege die `.jar`-Datei in deinen Server-Ordner `/plugins/`
-3. Starte den Server neu, um die Konfigurationsdateien generieren zu lassen.
-4. Richte die [Datenbank](#%EF%B8%8F-datenbank-einrichtung) ein und passe die Konfigurationsdateien an.
-5. Neustarten → Fertig!
+3. Starte den Server neu.
+4. Lies das [Wiki](https://github.com/Dolfirobots/PlayerSyncer/wiki)
 
 ---
 
