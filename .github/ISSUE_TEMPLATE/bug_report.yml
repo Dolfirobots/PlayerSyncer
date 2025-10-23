@@ -1,0 +1,41 @@
+name: Bug report
+description: Create a report to help us improve
+type: Bug
+body:
+- type: markdown
+  attributes:
+    value: |
+      Thanks for taking the time to fill out this bug report for the PlayerSyncer! Fill out the following form to your best ability to help us fix the problem.
+      Only use this if you're absolutely sure that you found a bug and can reproduce it. For anything else, use: [our Discord server](https://discord.gg/dxZTGpPbkd) or [the FAQ](https://github.com/Dolfirobots/PlayerSyncer/wiki/FAQ).
+- type: textarea
+  attributes:
+    label: Describe the bug
+    description: A clear and concise description of what the bug is. (You can hold it short)
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: To Reproduce
+    description: Steps to reproduce this behaviour
+    placeholder: |
+      1. Place block at ...
+      2. Block disappears
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Expected behaviour
+    description: A clear and concise description of what you expected to happen. (You can hold it short)
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Screenshots / Videos / Logs
+    description: If applicable, add screenshots to help explain your problem.
+- type: input
+  attributes:
+    label: Plugin Version
+    description: What version of Geyser are you running? (PLEASE DO NOT WRITE 'lasted')
+    placeholder: "For example: 1.2.0-SNAPSHOT"
+  validations:
+    required: true
