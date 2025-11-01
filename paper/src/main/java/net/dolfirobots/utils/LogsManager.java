@@ -18,7 +18,7 @@ import static net.dolfirobots.utils.Messanger.*;
  * Little log manager written by Dolfirobots
  * Just for some features
  */
-public class LogsManager implements Runnable {
+public class LogsManager {
 
     private static final String service = "Logs";
     private static final File logsFolder = new File(Main.getInstance().getDataFolder(), "logs");
