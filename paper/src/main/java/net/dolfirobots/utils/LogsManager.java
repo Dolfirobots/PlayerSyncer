@@ -60,6 +60,11 @@ public class LogsManager {
         new TextFilesAPI(new CustomConfigAPI(logFile)).addLine(timestamp + " [" + provider + "] " + logEntry);
     }
 
+    /**
+    * Creates a new error log entry
+    * @param service The service or class which is providing the error
+    * @param message The error message
+    */
     public static void newError(String service, String message) {
         sendError(service, message);
         message = ChatColor.stripColor(message);
