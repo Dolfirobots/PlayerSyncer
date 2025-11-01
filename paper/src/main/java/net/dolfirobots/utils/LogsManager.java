@@ -44,6 +44,11 @@ public class LogsManager {
         }
     }
 
+    /**
+     * Creates a new log entry
+     * @param provider The service or class which is providing the log
+     * @param logEntry The log entry
+     */
     public static void newLogEntry(String provider, String logEntry) {
         saveFile();
 
