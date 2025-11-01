@@ -20,7 +20,7 @@ import static net.dolfirobots.utils.Messanger.*;
 public class LogsManager {
 
     private static final String SERVICE = "Logs";
-    
+
     // The logs folder name
     private static final File logsFolder = new File(Main.getInstance().getDataFolder(), "logs");
 
