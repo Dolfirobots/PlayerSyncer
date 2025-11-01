@@ -59,9 +59,4 @@ public class LogsManager {
         message = ChatColor.stripColor(message);
         newLogEntry(service, message);
     }
-
-    @Override
-    public void run() {
-        saveFile();
-    }
 }
