@@ -19,6 +19,10 @@ import static net.dolfirobots.utils.Messanger.error;
 import static net.dolfirobots.manager.MainConfig.prefix;
 import static net.dolfirobots.utils.Messanger.sendConsole;
 
+/**
+ * Little log manager written by Dolfirobots
+ * Just for some features
+ */
 public class LogsManager implements Runnable {
 
     private static final String service = "Logs";
