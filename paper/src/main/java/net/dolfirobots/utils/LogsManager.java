@@ -24,10 +24,6 @@ public class LogsManager implements Runnable {
     private static final String service = "Logs";
     private static final File logsFolder = new File(Main.getInstance().getDataFolder(), "logs");
 
-    public static void register() {
-        Bukkit.getScheduler().runTaskTimerAsynchronously(Main.getInstance(), new LogsManager(), ChronoUnit.SECONDS.between(LocalDateTime.now(), LocalDateTime.now().toLocalDate().plusDays(1).atStartOfDay()) * 20 , (24 * (60 * 60)) * 20);
-        saveFile();
-    }
 
     public static void saveFile() {
         if (!logsFolder.exists()) {
