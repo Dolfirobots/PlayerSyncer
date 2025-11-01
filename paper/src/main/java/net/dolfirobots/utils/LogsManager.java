@@ -17,7 +17,7 @@ import java.util.Date;
 
 import static net.dolfirobots.utils.Messanger.error;
 import static net.dolfirobots.manager.MainConfig.prefix;
-import static net.dolfirobots.utils.Messanger.sendConsole;
+import static net.dolfirobots.utils.Messanger.*;
 
 /**
  * Little log manager written by Dolfirobots
