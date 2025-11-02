@@ -1,5 +1,4 @@
 name: Dependency Submission
-
 on:
   push:
     branches:
