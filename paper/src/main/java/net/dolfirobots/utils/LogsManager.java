@@ -36,7 +36,7 @@ public class LogsManager {
             String dateString = formatter.format(new Date());
             File logFile = new File(logsFolder, "log_" + dateString + ".log");
             if (!logFile.exists()) {
-                if (!logFile.createNewFile()) sendError(SERVICE, "Couldn't create log file!");
+                if (!logFile.createNewFile()) sendError(SERVICE, "Failed to create log file");
             }
         } catch (IOException e) {
             sendError(SERVICE, "There was an error when creating logs file: §e" + e.getMessage());
