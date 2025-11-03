@@ -313,11 +313,12 @@ public class TextFilesAPI {
         return List.of();
     }
 
-    /// Danger Method
-    ///
-    /// Rewrites the entire file content with the provided list of strings.
-    ///
-    /// @param list List of lines to write to the file. Each element represents one line.
+    /**
+     * Danger Method
+     * </br>
+     * Rewrites the entire file content with the provided list of strings.
+     * @param list List of lines to write to the file. Each element represents one line.
+     */
     public void setIndex(List<String> list) {
         try {
             FileWriter writer = new FileWriter(configAPI.getFile());
