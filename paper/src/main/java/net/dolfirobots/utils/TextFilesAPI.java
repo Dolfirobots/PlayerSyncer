@@ -249,7 +249,7 @@ public class TextFilesAPI {
             scanner.close();
             return list;
         } catch (FileNotFoundException e) {
-            newError(service, "Can't load config file!");
+            newError(SERVICE, "Can't load config file!");
             e.printStackTrace();
         }
         return List.of();
