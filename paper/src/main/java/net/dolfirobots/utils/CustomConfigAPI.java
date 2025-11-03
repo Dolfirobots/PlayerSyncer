@@ -70,7 +70,7 @@ public class CustomConfigAPI {
                 Main.getInstance().saveResource(path, false);
             }
         } else {
-            newError("CustomConfigAPI","File is null!");
+            sendError("CustomConfigAPI","File is null!");
         }
     }
 }
