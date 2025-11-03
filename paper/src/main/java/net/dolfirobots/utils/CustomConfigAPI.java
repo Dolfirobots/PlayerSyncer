@@ -57,7 +57,7 @@ public class CustomConfigAPI {
                     throw new RuntimeException(e);
                 }
             } else {
-                newError("CustomConfigAPI","File not exists!");
+                sendError("CustomConfigAPI","File not exists!");
             }
         } else {
             newError("CustomConfigAPI","File is null!");
