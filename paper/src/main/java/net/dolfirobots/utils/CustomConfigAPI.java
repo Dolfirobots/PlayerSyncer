@@ -10,7 +10,7 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import java.io.File;
 import java.io.IOException;
 
-import static net.dolfirobots.utils.LogsManager.newError;
+import static net.dolfirobots.utils.Messanger.sendError;
 
 public class CustomConfigAPI {
 
