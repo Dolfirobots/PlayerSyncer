@@ -44,7 +44,7 @@ public class CustomConfigAPI {
                 return YamlConfiguration.loadConfiguration(getFile());
             }
         }
-        newError("CustomConfigAPI","File is null or not exists!");
+        sendError("CustomConfigAPI","File is null or not exists!");
         return null;
     }
     public void setConfig(YamlConfiguration config) {
