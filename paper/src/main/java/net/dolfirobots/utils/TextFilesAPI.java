@@ -79,7 +79,7 @@ public class TextFilesAPI {
             scanner.close();
             return list;
         } catch (FileNotFoundException e) {
-            newError(service, "Error while reading file: §e" + e);
+            sendError(SERVICE, "Error while reading file: §e" + e);
             e.printStackTrace();
         }
         return List.of();
