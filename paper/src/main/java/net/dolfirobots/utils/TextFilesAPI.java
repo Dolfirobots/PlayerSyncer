@@ -308,7 +308,7 @@ public class TextFilesAPI {
             scanner.close();
             return list;
         } catch (FileNotFoundException e) {
-            newError(service, "Can't load config file!");
+            sendError(SERVICE, "Can't load config file!");
         }
         return List.of();
     }
