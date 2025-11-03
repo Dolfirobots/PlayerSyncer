@@ -22,7 +22,7 @@ public class CustomConfigAPI {
         if (file != null) {
             this.file = file;
         } else {
-            newError("CustomConfigAPI","File is null!");
+            sendError("CustomConfigAPI","File is null!");
         }
     }
 
