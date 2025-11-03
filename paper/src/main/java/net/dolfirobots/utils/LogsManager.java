@@ -39,7 +39,7 @@ public class LogsManager {
                 if (!logFile.createNewFile()) sendError(SERVICE, "Failed to create log file");
             }
         } catch (IOException e) {
-            sendError(SERVICE, "There was an error when creating logs file: §e" + e.getMessage());
+            sendError(SERVICE, "Error while creating log file: §e" + e.getMessage());
         }
     }
 
