@@ -23,7 +23,7 @@ import static net.dolfirobots.utils.LogsManager.newError;
  * </p>
  */
 public class TextFilesAPI {
-    private static final String service = "TextFilesAPI";
+    private static final String SERVICE = "TextFilesAPI";
 
     /**
      * Configuration API wrapper that provides access to the text file.
