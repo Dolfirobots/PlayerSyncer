@@ -329,7 +329,7 @@ public class TextFilesAPI {
             }
             writer.close();
         } catch (Exception e) {
-            newError(service, "Can't set file index!");
+            sendError(SERVICE, "Can't set file index!");
         }
 
     }
