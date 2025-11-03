@@ -356,7 +356,7 @@ public class TextFilesAPI {
             writer.write(line);
             writer.close();
         } catch (Exception e) {
-            newError(service, "Can't add line!");
+            sendError(SERVICE, "Can't add line!");
         }
     }
 }
