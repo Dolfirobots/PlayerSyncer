@@ -60,7 +60,7 @@ public class CustomConfigAPI {
                 sendError("CustomConfigAPI","File not exists!");
             }
         } else {
-            newError("CustomConfigAPI","File is null!");
+            sendError("CustomConfigAPI","File is null!");
         }
     }
 
