@@ -28,7 +28,7 @@ public class LogsManager {
     public static void saveFile() {
         if (!logsFolder.exists()) {
             if (!logsFolder.mkdir()) {
-                sendError(SERVICE, "Error by creating logs folder!");
+                sendError(SERVICE, "Failed to create logs folder");
             }
         }
         try {
