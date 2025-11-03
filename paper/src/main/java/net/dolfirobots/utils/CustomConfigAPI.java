@@ -53,7 +53,7 @@ public class CustomConfigAPI {
                 try {
                     config.save(getFile());
                 } catch (IOException e) {
-                    newError("CustomConfigAPI","§cError by saving the file: §e" + e);
+                    sendError("CustomConfigAPI","§cError by saving the file: §e" + e);
                     throw new RuntimeException(e);
                 }
             } else {
