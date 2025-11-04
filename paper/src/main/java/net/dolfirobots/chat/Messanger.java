@@ -51,7 +51,7 @@ public class Messanger {
     public static void sendError(String service, String errorMessage) {
         if (service != null && errorMessage != null) {
             // [Example Service] getMessanger was 0
-            sendConsole(prefix() + "§8[§e" + service + "§8] " + errorMessage);
+            sendConsole("§8[§e" + service + "§8] " + errorMessage);
         }
     }
 }
