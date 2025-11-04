@@ -2,7 +2,7 @@
  * Utils Package
  * Created by Dolfirobots
  */
-package net.dolfirobots.utils;
+package net.dolfirobots.chat;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
