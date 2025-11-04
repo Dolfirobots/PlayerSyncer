@@ -18,7 +18,7 @@ public class Messanger {
      * @param message
      */
     public static void sendConsole(String message) {
-        Bukkit.getConsoleSender().sendMessage(prefix() + "§7" + message);
+        Bukkit.getConsoleSender().sendMessage(prefix() + "§7 " + message);
     }
 
     /**
