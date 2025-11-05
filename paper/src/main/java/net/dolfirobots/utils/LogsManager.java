@@ -26,6 +26,11 @@ public class LogsManager {
 
 
     public static void saveFile() {
+        if (!Main.getInstance().getDataFolder().exists()) {
+            if (!Main.getInstance().getDataFolder().mkdirs()) {
+                sendError(SERVICE, "Failed to create plugin data folder");
+            }
+        }
         if (!logsFolder.exists()) {
             if (!logsFolder.mkdir()) {
                 sendError(SERVICE, "Failed to create logs folder");
