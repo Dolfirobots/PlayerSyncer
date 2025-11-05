@@ -44,6 +44,7 @@ public class MainCommand implements CommandExecutor, TabCompleter {
             sendPlayerMessage(centerMessage("Download it here:", CHAT_MESSAGE_LENGTH), sender);
             sendPlayerMessage(centerMessage("https://github.com/" + Main.GITHUB_USER + "/" + Main.GITHUB_REPO, CHAT_MESSAGE_LENGTH), sender);
             sendPlayerMessage("-".repeat(CHAT_MESSAGE_LENGTH), sender);
+            return true;
         }
 
         if (strings.length == 1) {
