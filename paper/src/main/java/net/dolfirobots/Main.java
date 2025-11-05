@@ -18,6 +18,7 @@ public final class Main extends JavaPlugin {
 
     public static final int CONSOLE_LENGTH = 29;
     public static final int CHAT_MESSAGE_LENGTH = 41;
+    public static final String PREFIX = "§e[§bPlayerSyncer§e] §7";
 
     private static Main main;
     private static String PLUGIN_VERSION = "unknown";
