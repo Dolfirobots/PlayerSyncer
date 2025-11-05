@@ -61,7 +61,7 @@ public class LogsManager {
         String timestamp = timestampFormatter.format(new Date());
 
         File logFile = new File(logsFolder, "log_" + formatter.format(new Date()) + ".log");
-        new TextFilesAPI(new CustomConfigAPI(logFile)).addLine(timestamp + " [" + provider + "] " + logEntry);
+        new TextFilesAPI(new CustomConfigAPI(logFile)).addLine("[" + timestamp + " " + logType.toString() + "] [" + provider + "] " + logEntry);
     }
 
     /**
