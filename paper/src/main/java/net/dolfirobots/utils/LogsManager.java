@@ -81,6 +81,6 @@ public class LogsManager {
     public static void newError(String service, String message) {
         sendError(service, message);
         message = ChatColor.stripColor(message);
-        newLogEntry(service, message);
+        newLogEntry(service, message, LogType.ERROR);
     }
 }
