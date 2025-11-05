@@ -65,6 +65,15 @@ public class LogsManager {
     }
 
     /**
+     * Creates a new info log entry
+     * @param provider The service or class which is providing the log
+     * @param logEntry The log entry
+     */
+    public static void newLogEntry(String provider, String logEntry) {
+        newLogEntry(provider, logEntry, LogType.INFO);
+    }
+
+    /**
     * Creates a new error log entry
     * @param service The service or class which is providing the error
     * @param message The error message
