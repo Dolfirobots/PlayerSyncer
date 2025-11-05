@@ -23,6 +23,9 @@ import static net.dolfirobots.utils.LogsManager.newError;
  * </p>
  */
 public class TextFilesAPI {
+
+    // TODO: Make async methods for all reading and writing operations and make it simpler. Also add better error handling.
+
     private static final String SERVICE = "TextFilesAPI";
 
     /**
