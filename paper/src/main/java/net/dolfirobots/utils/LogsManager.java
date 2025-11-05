@@ -53,7 +53,7 @@ public class LogsManager {
      * @param provider The service or class which is providing the log
      * @param logEntry The log entry
      */
-    public static void newLogEntry(String provider, String logEntry) {
+    public static void newLogEntry(String provider, String logEntry, LogType logType) {
         saveFile();
 
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
