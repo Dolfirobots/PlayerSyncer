@@ -78,22 +78,6 @@ public class MainCommand implements CommandExecutor, TabCompleter {
                 } else if (!lastVersion.equalsIgnoreCase("unknown")) {
                     sendPlayerMessage(centerMessage("Your version: §c" + Main.getPluginVersion() + "§7 => §a" + lastVersion, CHAT_MESSAGE_LENGTH), sender);
                     sendPlayerMessage("§c" + centerMessage("§cPlayerSyncer is not up to date! ):", CHAT_MESSAGE_LENGTH), sender);
-                    // Old mechanism to count the versions that the plugin is behind
-//                    ArrayList<String> versions = GitHub.getAllVersions(Main.GITHUB_USER, Main.GITHUB_REPO);
-//
-//                    ArrayList<Integer> removeVersionIndex = new ArrayList<>();
-//                    int currentIndex = 0;
-//
-//                    for (String version : versions) {
-//                        if (version.equalsIgnoreCase(Main.getPluginVersion())) {
-//                            break;
-//                        }
-//                        removeVersionIndex.add(currentIndex);
-//                        currentIndex++;
-//                    }
-//                    for (int i = removeVersionIndex.size() - 1; i >= 0; i--) {
-//                        versions.remove((int) removeVersionIndex.get(i));
-//                    }
                     List<String> versions = GitHub.getAllVersions(Main.GITHUB_USER, Main.GITHUB_REPO);
 
                     int currentIndex = versions.indexOf(Main.getPluginVersion());
