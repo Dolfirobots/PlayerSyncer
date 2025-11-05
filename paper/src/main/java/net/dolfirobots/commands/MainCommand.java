@@ -56,6 +56,7 @@ public class MainCommand implements CommandExecutor, TabCompleter {
                     return true;
                 }
                 // TODO: Implement the reload feature
+
                 // Checks the GitHub version with /playersyncer version
             } else if (strings[0].equalsIgnoreCase("version")) {
                 if (!PermissionManager.CHECK_VERSION.checkPlayer((Player) sender)) {
