@@ -21,7 +21,7 @@ public class LogsManager {
 
     private static final String SERVICE = "Logs";
 
-    // The logs folder name
+    // Logs folder
     private static final File logsFolder = new File(Main.getInstance().getDataFolder(), "logs");
 
 
