@@ -46,7 +46,6 @@ public final class Main extends JavaPlugin {
 
     }
 
-    /// Disable method
     @Override
     public void onDisable() {
         // Checks the plugin versions
