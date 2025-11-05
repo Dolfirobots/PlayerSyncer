@@ -83,4 +83,29 @@ public class LogsManager {
         message = ChatColor.stripColor(message);
         newLogEntry(service, message, LogType.ERROR);
     }
+
+    /**
+     * Log levels
+     */
+    public enum LogType {
+        DEBUG("DEBUG"),
+        INFO("INFO"),
+        WARNING("WARNING"),
+        ERROR("ERROR");
+        private final String typeName;
+        /**
+         * Log level
+         * @param typeName The name of the log level
+         */
+        LogType(String typeName) {
+            this.typeName = typeName;
+        }
+        /**
+         * Get the log level name
+         * @return The log level name
+         */
+        public String toString() {
+            return typeName;
+        }
+    }
 }
