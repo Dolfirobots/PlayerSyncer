@@ -23,8 +23,6 @@ public final class Main extends JavaPlugin {
     private static String PLUGIN_VERSION = "unknown";
 
 
-
-    /// Load method
     @Override
     public void onEnable() {
         main = this;
