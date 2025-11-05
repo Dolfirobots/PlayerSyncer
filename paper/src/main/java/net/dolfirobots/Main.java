@@ -43,6 +43,8 @@ public final class Main extends JavaPlugin {
         }
         sendConsole("-".repeat(CONSOLE_LENGTH));
 
+        // Commands
+        MainCommand.register();
 
     }
 
