@@ -11,7 +11,7 @@ import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import static net.dolfirobots.utils.Messanger.*;
+import static net.dolfirobots.chat.Messanger.*;
 
 /**
  * Little log manager written by Dolfirobots
