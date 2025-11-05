@@ -86,7 +86,7 @@ public class MainCommand implements CommandExecutor, TabCompleter {
                     if (currentIndex != -1) {
                         behindCount = versions.size() - (currentIndex + 1);
                     } else {
-                        sendError(SERVICE, "currentIndex is -1 wich means there was no right version found");
+                        sendError(SERVICE, "currentIndex is -1, which means no matching version was found. Checked plugin version: " + Main.getPluginVersion() + ", available versions: " + versions);
                     }
                     // Example:
                     // versions => "1.0.0", "1.1.2", "1.3.5", "1.2.4", "1.4.8", "3.12.20"
