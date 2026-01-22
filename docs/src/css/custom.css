@@ -1,0 +1,157 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* Light Theme Variables */
+html[data-theme='light'] {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  
+  --ifm-background-color: #ffffff;
+  --ifm-background-surface-color: #f5f6f7;
+  --ifm-font-color-base: #000000;
+
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Theme Variables */
+html[data-theme='dark'] {
+  --ifm-color-primary: #0098ff;
+  --ifm-color-primary-dark: #008ae6;
+  --ifm-color-primary-darker: #007dd1;
+  --ifm-color-primary-darkest: #0066ad;
+  --ifm-color-primary-light: #1aa2ff;
+  --ifm-color-primary-lighter: #33abff;
+  --ifm-color-primary-lightest: #66c3ff;
+
+  --ifm-background-color: #121212;
+  --ifm-background-surface-color: #1e1e1e;
+  --ifm-font-color-base: #ffffff;
+
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+:root {
+  --ifm-code-font-size: 95%;
+}
+
+/* --- Navbar --- */
+.navbar {
+  /* Glassmorphism Effect */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+html[data-theme='light'] .navbar {
+  background: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+html[data-theme='dark'] .navbar {
+  background: rgba(28, 28, 28, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar__title {
+  color: var(--ifm-font-color-base);
+}
+
+.navbar__link {
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  color: var(--ifm-color-primary);
+  transform: translateY(-2px);
+}
+
+html[data-theme='light'] .navbar__link:hover,
+html[data-theme='light'] .navbar__link--active {
+  background-color: rgba(46, 133, 85, 0.1);
+}
+
+html[data-theme='dark'] .navbar__link:hover,
+html[data-theme='dark'] .navbar__link--active {
+  background-color: rgba(0, 152, 255, 0.1);
+}
+
+
+/* --- Footer --- */
+.footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-top: 1px solid var(--ifm-color-primary);
+}
+
+html[data-theme='light'] .footer {
+  background: linear-gradient(135deg, #ffffff, #f5f6f7 50%, #ffffff);
+  box-shadow: 0 -5px 15px rgba(46, 133, 85, 0.1);
+}
+
+html[data-theme='dark'] .footer {
+  background: linear-gradient(135deg, #1e1e1e, #121212 50%, #1e1e1e);
+  box-shadow: 0 -5px 15px rgba(0, 152, 255, 0.1);
+}
+
+
+.footer .footer__title {
+  color: var(--ifm-color-primary);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer .footer__links {
+  margin-top: 1rem;
+}
+
+.footer .footer__link-item {
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer .footer__link-item:hover {
+  color: var(--ifm-color-primary-light);
+  transform: translateX(4px);
+}
+
+.footer .footer__copyright {
+  margin-top: 2rem;
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+  padding-top: 2rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* --- Docs Sidebar --- */
+.menu {
+  padding: 1rem;
+}
+
+.menu__link {
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  transition: all 0.2s ease;
+  border-left: 3px solid transparent;
+}
+
+.menu__link:hover {
+  background-color: var(--ifm-background-surface-color);
+  transform: translateX(4px);
+}
+
+.menu__list-item--active .menu__link {
+  border-left-color: var(--ifm-color-primary);
+  background-color: var(--ifm-background-surface-color);
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
